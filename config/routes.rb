@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :rooms, :answers, :users, :authentication
+
+      	post '/login', to: 'authentication#create'
+      	get '/profile', to: 'users#profile'
+      	post '/token', to: 'accounts#create'
     end
   end
 
