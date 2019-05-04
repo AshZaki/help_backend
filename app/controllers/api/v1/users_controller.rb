@@ -11,6 +11,7 @@ class Api::V1::UsersController < ApplicationController
 	end
 
 	def create
+		# puts 'hi'
 	    @user = User.create(user_params)
 	    render json: {
 	      user: @user,
