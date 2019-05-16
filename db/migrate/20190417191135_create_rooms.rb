@@ -5,7 +5,6 @@ class CreateRooms < ActiveRecord::Migration[5.2]
       t.string :password
       t.string :description
       t.string :type
-      t.string :catagories
       t.integer :user_id
 
       t.timestamps

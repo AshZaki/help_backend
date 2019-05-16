@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 2019_04_17_191408) do
     t.string "password"
     t.string "description"
     t.string "type"
-    t.string "catagories"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
